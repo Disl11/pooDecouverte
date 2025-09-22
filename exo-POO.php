@@ -61,12 +61,13 @@ class ComptBancaire {
 
     public function retirer($montant){
         
-        $nouveauSolde = $this->solde -= $montant;
+        $nouveauSolde = $this->solde - $montant;
 
         if ($nouveauSolde < -100){
-            return "Vous ne pouvez pas depasser plus 100€ de decouvert !";
+            return "Vous ne pouvez pas depasser plus 100€ de decouvert ! \n";
         }else{
-            return $this->solde = $nouveauSolde;
+                    $this->solde = $nouveauSolde;
+            return "retrais effectuer \n";
         }
     }
 }
@@ -76,7 +77,7 @@ echo $monCompte-> afficherSolde();
 $monCompte-> deposer(100);
 // $monCompte-> solde = 100; // la variable est en private donc pas acces. ERREUR "cela sert a proteger les informations importante"
 echo $monCompte-> afficherSolde();
-$monCompte-> retirer(300);
+echo $monCompte-> retirer(300);
 echo $monCompte-> afficherSolde();
 
 
