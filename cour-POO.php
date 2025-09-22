@@ -1,7 +1,7 @@
 <?php
 class Animal {
 
-    public string $nom; //string définir le type a la variable/attribut
+    public string $nom; //string définir le type de la variable/attribut
     public int $age;
 
 
