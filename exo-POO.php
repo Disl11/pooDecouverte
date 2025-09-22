@@ -29,7 +29,7 @@ $utilisateur2 = new Utilisateur("Pierre");
 $utilisateur2 -> bonjour();
 
 
-// ++++++ class admin ++++++
+// ++++++=============== heritage ================++++++
 class Admin extends Utilisateur{
      
 }
@@ -45,7 +45,7 @@ $admin-> role();
 $visiteur = new Visiteur("Ludo", "visiteur");
 $visiteur-> role();
 
-// ++++++++ encapsulation ++++++++++
+// ++++++++================= encapsulation ====================++++++++++
 class ComptBancaire {
     
     private float $solde = 80;  // ici en private  
