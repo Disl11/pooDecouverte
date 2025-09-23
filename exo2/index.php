@@ -16,7 +16,7 @@
 
 // function payer(Abonnement $abonnement, bool $premierPaiement): ?float
 // {
-// À implémenterselon selon les règles ci-dessus.
+// À implémenter selon selon les règles ci-dessus.
 
 // Démonstration
 // $basic = new Basic();
@@ -47,7 +47,11 @@ $etudiant = new EtudiantAbonnement();
 //Tableau 
 $abonnement = [$premnium, $basique, $etudiant];
 
-// $etudiant->suspendre();
+
+$basique->payer(true);
+$premnium->payer(false);
+$etudiant->suspendre();
+$etudiant->payer(true);
 
 // boucle foreach pour afficher tout les abonnement sans rondondance du code 
 foreach ($abonnement as $abonnement) {
