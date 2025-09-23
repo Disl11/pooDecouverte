@@ -12,7 +12,6 @@
         $this-> role = $role;
         
     }
-
    
          public function bonjour(){
 
