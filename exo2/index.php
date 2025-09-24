@@ -48,11 +48,6 @@ $etudiant = new EtudiantAbonnement();
 $abonnement = [$premnium, $basique, $etudiant];
 
 
-$basique->payer(true);
-$premnium->payer(false);
-$etudiant->suspendre();
-$etudiant->payer(true);
-
 // boucle foreach pour afficher tout les abonnement sans rondondance du code 
 foreach ($abonnement as $abonnement) {
 
@@ -61,3 +56,8 @@ foreach ($abonnement as $abonnement) {
     echo " Prix : " . $abonnement->calculerPrixMensuel();
     echo " \n -------------------- \n";
 }
+
+$basique->payer(true);
+$premnium->payer(false);
+$etudiant->suspendre();
+$etudiant->payer(true);
