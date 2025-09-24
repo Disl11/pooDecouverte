@@ -61,5 +61,3 @@ $basique->payer(true);
 $premnium->payer(false);
 $etudiant->suspendre();
 $etudiant->payer(true);
-
-// salut elodie
